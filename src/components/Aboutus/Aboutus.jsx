@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NAME } from '../../constants/constants';
 const AboutUs = () => {
   return (
     <section className="about-us-section pt-0">
@@ -44,11 +44,11 @@ const AboutUs = () => {
           <div className="col-lg-6">
             <div className="content-block wow fadeInUp" data-wow-duration="1500ms">
               <div className="sec-title mb-20">
-                <div className="sub-title">About Skanda Pest Control</div>
+                <div className="sub-title">About {NAME}</div>
                 <h2>World’s Best Pest Control Services Since 2008</h2>
               </div>
               <div className="text">
-                Skanda Pest Control has been providing professional pest management solutions for over 20 years, ensuring homes and businesses stay pest-free. We use eco-friendly and safe methods to eliminate pests from your surroundings.
+                {NAME} has been providing professional pest management solutions for over 20 years, ensuring homes and businesses stay pest-free. We use eco-friendly and safe methods to eliminate pests from your surroundings.
               </div>
               <ul className="list">
                 <li>Effective pest control solutions for homes and businesses.</li>

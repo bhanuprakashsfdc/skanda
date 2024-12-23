@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NAME, EMAIL, EMAIL_URL, PHONE, PHONE_URL, ADDRESS } from '../../constants/constants';
 const MiniFooter = () => {
   return (
     <footer className="main-footer">
@@ -9,22 +9,14 @@ const MiniFooter = () => {
             {/* About Section */}
             <div className="col-lg-4 col-md-7">
               <div className="widget about-widget">
-                <h4 className="widget_title">About Skanda Pest Control</h4>
+                <h4 className="widget_title">About {NAME}</h4>
                 <div className="text">
-                  Skanda Pest Control offers professional and eco-friendly pest control services to keep your home and business safe from pests.
+                  {NAME} offers professional and eco-friendly pest control services to keep your home and business safe from pests.
                 </div>
                 <div className="copyright">
-                  <a href="#">Skanda Pest Control</a> © 2024 All Rights Reserved
+                  <a href="#">{NAME}</a> © 2024 All Rights Reserved
                 </div>
               </div>
-              <div className="content auto-container">
-                <ul className="social-icon flex">
-                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i className="fab fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-                </ul>
-             </div>
             </div>
 
             {/* Useful Links Section */}
@@ -58,15 +50,14 @@ const MiniFooter = () => {
                 </div>
               </div>
             </div>
-
             {/* Contact Section */}
             <div className="col-lg-3 offset-lg-1 col-md-6">
               <div className="widget contact-widget">
                 <h4 className="widget_title">Contact Us</h4>
                 <ul>
-                  <li>3491 Pall Mall Drive, Suite #203 Jacksonville, FL 42368</li>
-                  <li><a href="mailto:info@skandapestcontrol.com">info@skandapestcontrol.com</a></li>
-                  <li><a href="tel:+2(305)5873407">+2(305) 587-3407</a></li>
+                  <li> {ADDRESS} </li>
+                  <li><a href={ EMAIL }>{ EMAIL }</a></li>
+                  <li><a href={ PHONE_URL }>{ PHONE }</a></li>
                 </ul>
               </div>
             </div>

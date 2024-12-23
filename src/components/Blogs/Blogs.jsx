@@ -1,11 +1,12 @@
 import React from 'react';
+import {NAME } from '../../constants/constants';
 const Blogs = () => {
   return (
     <section className="blog-section">
       <div className="auto-container">
         <div className="sec-title text-center">
           <div className="sub-title">News & Articles</div>
-          <h2>Stay Updated with Skanda Pest Control</h2>
+          <h2>Stay Updated with {NAME}</h2>
         </div>
         <div className="row">
           <div className="col-lg-4 news-block-one">

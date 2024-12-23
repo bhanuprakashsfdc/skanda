@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-
+import {NAME } from '../../constants/constants';
 const Testimonials = () => {
   // Carousel settings
   const settings = {
@@ -43,7 +43,7 @@ const Testimonials = () => {
                 <span className="fas fa-star"></span>
               </div>
               <div className="text">
-                "Skanda Pest Control provided quick and effective solutions for our cockroach problem. Their service was excellent, and their team was professional and friendly. Highly recommend!"
+                "{NAME} provided quick and effective solutions for our cockroach problem. Their service was excellent, and their team was professional and friendly. Highly recommend!"
               </div>
               <div className="author-info">
                 <h4>Mike Hardson</h4>
@@ -85,7 +85,7 @@ const Testimonials = () => {
                 <span className="fas fa-star"></span>
               </div>
               <div className="text">
-                "Excellent service for rodent control. Skanda Pest Control did a great job in addressing the issue, and the technicians were knowledgeable and efficient."
+                "Excellent service for rodent control. {NAME} did a great job in addressing the issue, and the technicians were knowledgeable and efficient."
               </div>
               <div className="author-info">
                 <h4>John Smith</h4>

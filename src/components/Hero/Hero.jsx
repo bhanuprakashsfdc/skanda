@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NAME, PHONE, PHONE_URL} from '../../constants/constants';
 const Hero = () => {
   return (
     <div>
@@ -28,16 +28,10 @@ const Hero = () => {
                 <div className="bg" style={{ backgroundImage: 'url(assets/images/resource/image-9.jpg)' }}></div>
                 <img src="assets/images/resource/image-2.png" alt="Pest Control" />
               </div>
-              <div className="video-box">
-                <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A" className="overlay-link lightbox-image video-fancybox">
-                  <i className="flaticon-play-arrow"></i>
-                </a>
-                <h5>Watch Our Intro Video</h5>
-              </div>
               <div className="contact-number">
-                <h5>Emergency Pest Control</h5>
+                <h5>{NAME}</h5>
                 <div className="number">
-                  <a href="tel:(254)2648215">(254) 2648 215</a>
+                  <a href= {PHONE_URL}>{PHONE}</a>
                 </div>
               </div>
             </div>
