@@ -1,5 +1,57 @@
 import React from 'react';
 
+// Service data array
+const services = [
+  {
+    icon: 'flaticon-cockroach',
+    title: 'Cockroach Control',
+    description: 'Professional solutions for eliminating cockroaches from your home or business.',
+    link: 'cockroach-control.html',
+  },
+  {
+    icon: 'flaticon-tarantula',
+    title: 'Spiders Control',
+    description: 'Safe and efficient spider control services to protect your home from unwanted arachnids.',
+    link: 'spiders-control.html',
+  },
+  {
+    icon: 'flaticon-termite',
+    title: 'Termites Control',
+    description: 'Protect your property from termites with our comprehensive termite control services.',
+    link: 'termites-control.html',
+  },
+  {
+    icon: 'flaticon-squirrel',
+    title: 'Rodents Control',
+    description: 'We provide safe and effective methods to remove and prevent rodents from your property.',
+    link: 'rodents-control.html',
+  },
+  {
+    icon: 'flaticon-fly',
+    title: 'Fly Control',
+    description: 'Effective fly control solutions to ensure your space remains free of pests.',
+    link: 'fly-control.html',
+  },
+  {
+    icon: 'flaticon-bee',
+    title: 'Bee Control',
+    description: 'Protect your property from bee infestations with our expert control services.',
+    link: 'bee-control.html',
+  },
+  {
+    icon: 'flaticon-ant',
+    title: 'Ant Control',
+    description: 'Effective solutions for controlling and eliminating ants from your home.',
+    link: 'ant-control.html',
+  },
+  {
+    icon: 'flaticon-mosquito',
+    title: 'Bed Bug Control',
+    description: 'Professional services to eliminate bed bugs and ensure a peaceful night’s sleep.',
+    link: 'bed-bug-control.html',
+  },
+];
+
 const Services = () => {
   return (
     <section className="services-section style-two">
@@ -12,166 +64,24 @@ const Services = () => {
             <img src="assets/images/shape/shape-7.png" alt="Shape" />
           </span>
           <div className="row">
-            {/* Cockroach Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-cockroach"></span>
-                </div>
-                <h4>
-                  <a href="cockroach-control.html">Cockroach</a>
-                </h4>
-                <div className="text">
-                  Professional solutions for eliminating cockroaches from your home or business.
-                </div>
-                <div className="link-btn">
-                  <a href="cockroach-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Spiders Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-tarantula"></span>
-                </div>
-                <h4>
-                  <a href="spiders-control.html">Spiders</a>
-                </h4>
-                <div className="text">
-                  Safe and efficient spider control services to protect your home from unwanted arachnids.
-                </div>
-                <div className="link-btn">
-                  <a href="spiders-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
+            {services.map((service, index) => (
+              <div key={index} className="col-lg-3 col-md-6 service-block-one">
+                <div className="inner-box">
+                  <div className="icon">
+                    <span className={service.icon}></span>
+                  </div>
+                  <h4>
+                    <a href={service.link}>{service.title}</a>
+                  </h4>
+                  <div className="text">{service.description}</div>
+                  <div className="link-btn">
+                    <a href={service.link} className="theme-btn btn-style-one style-two">
+                      <span>Learn More</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Termites Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-termite"></span>
-                </div>
-                <h4>
-                  <a href="termites-control.html">Termites</a>
-                </h4>
-                <div className="text">
-                  Protect your property from termites with our comprehensive termite control services.
-                </div>
-                <div className="link-btn">
-                  <a href="termites-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Rodents Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-squirrel"></span>
-                </div>
-                <h4>
-                  <a href="rodents-control.html">Rodents</a>
-                </h4>
-                <div className="text">
-                  We provide safe and effective methods to remove and prevent rodents from your property.
-                </div>
-                <div className="link-btn">
-                  <a href="rodents-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Fly Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-fly"></span>
-                </div>
-                <h4>
-                  <a href="fly-control.html">Fly Control</a>
-                </h4>
-                <div className="text">
-                  Effective fly control solutions to ensure your space remains free of pests.
-                </div>
-                <div className="link-btn">
-                  <a href="fly-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Bee Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-bee"></span>
-                </div>
-                <h4>
-                  <a href="bee-control.html">Bee Control</a>
-                </h4>
-                <div className="text">
-                  Protect your property from bee infestations with our expert control services.
-                </div>
-                <div className="link-btn">
-                  <a href="bee-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Ant Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-ant"></span>
-                </div>
-                <h4>
-                  <a href="ant-control.html">Ant Control</a>
-                </h4>
-                <div className="text">
-                  Effective solutions for controlling and eliminating ants from your home.
-                </div>
-                <div className="link-btn">
-                  <a href="ant-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Bed Bug Control */}
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box">
-                <div className="icon">
-                  <span className="flaticon-mosquito"></span>
-                </div>
-                <h4>
-                  <a href="bed-bug-control.html">Bed Bug</a>
-                </h4>
-                <div className="text">
-                  Professional services to eliminate bed bugs and ensure a peaceful night’s sleep.
-                </div>
-                <div className="link-btn">
-                  <a href="bed-bug-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
