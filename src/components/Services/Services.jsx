@@ -1,98 +1,87 @@
 import React from 'react';
 
-const ServicesUs = () => {
+// Service data array
+const services = [
+  {
+    icon: 'flaticon-cockroach',
+    title: 'Cockroach Control',
+    description: 'Professional solutions for eliminating cockroaches from your home or business.',
+    link: 'cockroach-control.html',
+  },
+  {
+    icon: 'flaticon-tarantula',
+    title: 'Spiders Control',
+    description: 'Safe and efficient spider control services to protect your home from unwanted arachnids.',
+    link: 'spiders-control.html',
+  },
+  {
+    icon: 'flaticon-termite',
+    title: 'Termites Control',
+    description: 'Protect your property from termites with our comprehensive termite control services.',
+    link: 'termites-control.html',
+  },
+  {
+    icon: 'flaticon-squirrel',
+    title: 'Rodents Control',
+    description: 'We provide safe and effective methods to remove and prevent rodents from your property.',
+    link: 'rodents-control.html',
+  },
+  {
+    icon: 'flaticon-fly',
+    title: 'Fly Control',
+    description: 'Effective fly control solutions to ensure your space remains free of pests.',
+    link: 'fly-control.html',
+  },
+  {
+    icon: 'flaticon-bee',
+    title: 'Bee Control',
+    description: 'Protect your property from bee infestations with our expert control services.',
+    link: 'bee-control.html',
+  },
+  {
+    icon: 'flaticon-ant',
+    title: 'Ant Control',
+    description: 'Effective solutions for controlling and eliminating ants from your home.',
+    link: 'ant-control.html',
+  },
+  {
+    icon: 'flaticon-mosquito',
+    title: 'Bed Bug Control',
+    description: 'Professional services to eliminate bed bugs and ensure a peaceful night’s sleep.',
+    link: 'bed-bug-control.html',
+  },
+];
+
+const Services = () => {
   return (
-    <section className="services-section">
+    <section className="services-section style-two">
       <div className="auto-container">
-        <div className="sec-title text-center">
-          <div className="sub-title">Our Services</div>
-          <h2>Common Pest Control</h2>
-        </div>
         <div className="wrapper-box">
-          <span className="shape-one">
-            <img src="assets/images/shape/shape-2.png" alt="Shape" />
+          <span className="shape-three">
+            <img src="assets/images/shape/shape-6.png" alt="Shape" />
           </span>
-          <span className="shape-two">
-            <img src="assets/images/shape/shape-3.png" alt="Shape" />
+          <span className="shape-four">
+            <img src="assets/images/shape/shape-7.png" alt="Shape" />
           </span>
           <div className="row">
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                <div className="icon">
-                  <span className="flaticon-cockroach"></span>
-                </div>
-                <h4>
-                  <a href="cockroach-control.html">Cockroach Control</a>
-                </h4>
-                <div className="text">
-                  Professional solutions for eliminating cockroaches from your home or business.
-                </div>
-                <div className="link-btn">
-                  <a href="cockroach-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                <div className="icon">
-                  <span className="flaticon-tarantula"></span>
-                </div>
-                <h4>
-                  <a href="spiders-control.html">Spiders Control</a>
-                </h4>
-                <div className="text">
-                  Safe and efficient spider control services to protect your home from unwanted arachnids.
-                </div>
-                <div className="link-btn">
-                  <a href="spiders-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
+            {services.map((service, index) => (
+              <div key={index} className="col-lg-3 col-md-6 service-block-one">
+                <div className="inner-box">
+                  <div className="icon">
+                    <span className={service.icon}></span>
+                  </div>
+                  <h4>
+                    <a href={service.link}>{service.title}</a>
+                  </h4>
+                  <div className="text">{service.description}</div>
+                  <div className="link-btn">
+                    <a href={service.link} className="theme-btn btn-style-one style-two">
+                      <span>Learn More</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                <div className="icon">
-                  <span className="flaticon-termite"></span>
-                </div>
-                <h4>
-                  <a href="termites-control.html">Termite Control</a>
-                </h4>
-                <div className="text">
-                  Protect your property from termites with our comprehensive termite control services.
-                </div>
-                <div className="link-btn">
-                  <a href="termites-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 service-block-one">
-              <div className="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                <div className="icon">
-                  <span className="flaticon-squirrel"></span>
-                </div>
-                <h4>
-                  <a href="rodents-control.html">Rodents Control</a>
-                </h4>
-                <div className="text">
-                  We provide safe and effective methods to remove and prevent rodents from your property.
-                </div>
-                <div className="link-btn">
-                  <a href="rodents-control.html" className="theme-btn btn-style-one style-two">
-                    <span>Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="all-service-link text-center mt-30 mb-30">
-            <a href="services.html" className="theme-btn btn-style-one style-three">
-              <span>More Services</span>
-            </a>
+            ))}
           </div>
         </div>
       </div>
@@ -100,4 +89,4 @@ const ServicesUs = () => {
   );
 };
 
-export default ServicesUs;
+export default Services;

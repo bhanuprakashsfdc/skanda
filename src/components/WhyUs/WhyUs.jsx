@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NAME } from '../../constants/constants';
 const WhyUs = () => {
   return (
     <section className="whychoose-us-section">
@@ -11,7 +11,7 @@ const WhyUs = () => {
               <h2>We Treat Your Home <br /> Like It's Our Own</h2>
             </div>
             <div className="text mb-40">
-              Skanda Pest Control has been offering professional and effective pest control services for over 20 years. We ensure your home is safe, secure, and pest-free with eco-friendly solutions.
+              {NAME} has been offering professional and effective pest control services for over 20 years. We ensure your home is safe, secure, and pest-free with eco-friendly solutions.
             </div>
             <div className="icon-box wow fadeInDown" data-wow-duration="1500ms">
               <div className="icon"><span className="flaticon-settings"></span></div>
@@ -45,7 +45,7 @@ const WhyUs = () => {
               </div>
               <div className="author-info" data-parallax='{"y": 40}'>
                 <div className="author">
-                  <img src="assets/images/resource/author-1.jpg" alt="Skanda Pest Control Expert" />
+                  <img src="assets/images/resource/author-1.jpg" alt="{NAME} Expert" />
                 </div>
                 <h4>Years of Experience</h4>
                 <div className="link">
