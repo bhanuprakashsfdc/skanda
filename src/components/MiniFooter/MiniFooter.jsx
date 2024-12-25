@@ -25,11 +25,10 @@ const MiniFooter = () => {
                 <h4 className="widget_title">Useful Links</h4>
                 <div className="widget-content">
                   <ul className="list">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">How It Works</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/services.html">Our Services</a></li>
                     <li><a href="#">Our Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
                   </ul>
                 </div>
               </div>

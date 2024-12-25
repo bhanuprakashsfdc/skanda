@@ -13,7 +13,7 @@ const Hero = () => {
               <div className="text">Professional pest control services for your peace of mind.</div>
               <div className="link-box">
                 <a href="contact.html" className="theme-btn btn-style-one">
-                  <span>Schedule Services</span>
+                  <span>Call us for Appointment</span>
                 </a>
               </div>
             </div>

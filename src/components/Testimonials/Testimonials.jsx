@@ -1,99 +1,70 @@
 import React from 'react';
-import Slider from 'react-slick';
-import {NAME } from '../../constants/constants';
+
 const Testimonials = () => {
-  // Carousel settings
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    arrows: true,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
-  };
+  const testimonials = [
+    {
+      name: 'Arun Kumar',
+      location: 'Bangalore',
+      rating: 5,
+      testimonial:
+        'Skanda Pest Control provided quick and effective solutions for our cockroach problem. Their service was excellent, and their team was professional and friendly. Highly recommend!',
+    },
+    {
+      name: 'Priya Sharma',
+      location: 'Bangalore',
+      rating: 4,
+      testimonial:
+        'The termite control service was incredibly effective. We haven’t seen any signs of termites since their visit. The team was thorough, and they walked us through every step of the process.',
+    },
+    {
+      name: 'Rajesh Patel',
+      location: 'Bangalore',
+      rating: 5,
+      testimonial:
+        'Skanda Pest Control was prompt, efficient, and thorough. The rodent control service they provided was top-notch, and we haven’t had any issues since. A great experience overall!',
+    },
+    {
+      name: 'Neha Rao',
+      location: 'Bangalore',
+      rating: 4,
+      testimonial:
+        'The fly control service was excellent! Skanda Pest Control quickly resolved our issue, and we’ve seen a noticeable difference. The staff was professional, and the service was affordable.',
+    },
+    {
+      name: 'Suresh Reddy',
+      location: 'Bangalore',
+      rating: 5,
+      testimonial:
+        'I highly recommend Skanda Pest Control for their bee control services. They safely removed the hive and ensured no bees returned. The team was knowledgeable and friendly.',
+    },
+  ];
 
   return (
-    <section className="testimonials-section">
+    <section className="services-section style-two">
       <div className="auto-container">
         <div className="sec-title text-center">
-          <div className="sub-title">Testimonials</div>
-          <h2>Customer Reviews</h2>
+          <div className="sub-title">Customer Testimonials</div>
+          <h2>What Our Customers Say</h2>
         </div>
-        <Slider {...settings}>
-          <div className="testimonial-block">
-            <div className="inner-box">
-              <div className="image">
-                <img src="assets/images/resource/author-2.jpg" alt="Customer 1" />
+        <div className="testimonials-container flex">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial-item service-block-one ">
+              <div className="col-lg-12 col-md-12">
+                <div className="inner-box">
+                  <h4 className="text">{testimonial.name}</h4>
+                  <span>{testimonial.location}</span>
+                  <div className="testimonial-rating">
+                  {Array.from({ length: testimonial.rating }).map((_, i) => (
+                    <span key={i} className="fa fa-star"></span>
+                  ))}
+                  <div className="testimonial-text">{testimonial.testimonial}</div>
+                </div>
               </div>
-              <div className="rating">
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-              </div>
-              <div className="text">
-                "{NAME} provided quick and effective solutions for our cockroach problem. Their service was excellent, and their team was professional and friendly. Highly recommend!"
-              </div>
-              <div className="author-info">
-                <h4>Mike Hardson</h4>
-                <div className="designation">New York</div>
+              
               </div>
             </div>
-          </div>
-          <div className="testimonial-block">
-            <div className="inner-box">
-              <div className="image">
-                <img src="assets/images/resource/author-2.jpg" alt="Customer 2" />
-              </div>
-              <div className="rating">
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-              </div>
-              <div className="text">
-                "The termite control service was incredibly effective. We haven’t seen any signs of termites since their visit. The team was thorough, and they walked us through every step of the process."
-              </div>
-              <div className="author-info">
-                <h4>Jane Doe</h4>
-                <div className="designation">California</div>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-block">
-            <div className="inner-box">
-              <div className="image">
-                <img src="assets/images/resource/author-2.jpg" alt="Customer 3" />
-              </div>
-              <div className="rating">
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-                <span className="fas fa-star"></span>
-              </div>
-              <div className="text">
-                "Excellent service for rodent control. {NAME} did a great job in addressing the issue, and the technicians were knowledgeable and efficient."
-              </div>
-              <div className="author-info">
-                <h4>John Smith</h4>
-                <div className="designation">Florida</div>
-              </div>
-            </div>
-          </div>
-        </Slider>
+          ))}
+        </div>
       </div>
     </section>
   );

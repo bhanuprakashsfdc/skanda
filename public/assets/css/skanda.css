@@ -4,3 +4,7 @@
 .stylecolor{
     color: white;
 }
+.mybox{
+    display: flex;
+    padding: 10px;
+}
