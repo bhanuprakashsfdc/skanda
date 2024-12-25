@@ -7,7 +7,7 @@ import './index.css';
 import Layout from './layouts/Layout.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/Aboutpage.jsx';
-import Services from './pages/Servicespage.jsx';
+/* import Services from './pages/Servicespage.jsx'; */
 import Contact from './pages/Contactpage.jsx';
 import Whyuspage from './pages/Whyuspage.jsx';
 import PestControlService from './components/PestControlService/PestControlService.jsx'; // New Component for pest control services
@@ -25,7 +25,7 @@ root.render(
         <Route index element={<Home />} />
         <Route path="/index.html" element={<Home />} />
         <Route path="/about.html" element={<About />} />
-        <Route path="/services.html" element={<Services />} />
+       {/*  <Route path="/services.html" element={<Services />} /> */}
         <Route path="/why-us.html" element={<Whyuspage />} />
         <Route path="/contact.html" element={<Contact />} />
 
