@@ -9,7 +9,7 @@ import Home from './pages/Home.jsx';
 import AboutPageView from './pages/Aboutpage.jsx';
 import ServicesPageView from './pages/ServicesPage.jsx';
 import ContactPageView from './pages/ContactPage.jsx';
-import WhyuspagePageView from './pages/Whyuspage.jsx';
+import WhyuspagePageView from './pages/WhyUspage.jsx';
 import PestControlService from './components/PestControlService/PestControlService.jsx'; // New Component for pest control services
 
 // Importing city data
