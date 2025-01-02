@@ -6,10 +6,10 @@ import './index.css';
 // Importing pages and components
 import Layout from './layouts/Layout.jsx';
 import Home from './pages/Home.jsx';
-import About from './pages/Aboutpage.jsx';
-/* import Services from './pages/Servicespage.jsx'; */
-import Contact from './pages/Contactpage.jsx';
-import Whyuspage from './pages/Whyuspage.jsx';
+import AboutPageView from './pages/Aboutpage.jsx';
+import ServicesPageView from './pages/Servicespage.jsx';
+import ContactPageView from './pages/ContactPage.jsx';
+import WhyuspagePageView from './pages/Whyuspage.jsx';
 import PestControlService from './components/PestControlService/PestControlService.jsx'; // New Component for pest control services
 
 // Importing city data
@@ -24,10 +24,10 @@ root.render(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/index.html" element={<Home />} />
-        <Route path="/about.html" element={<About />} />
-       {/*  <Route path="/services.html" element={<Services />} /> */}
-        <Route path="/why-us.html" element={<Whyuspage />} />
-        <Route path="/contact.html" element={<Contact />} />
+        <Route path="/about.html" element={<AboutPageView />} />
+        <Route path="/services.html" element={<ServicesPageView />} />
+        <Route path="/why-us.html" element={<WhyuspagePageView />} />
+        <Route path="/contact.html" element={<ContactPageView />} />
 
         {/* Dynamic routes for Pest Control Services in each city */}
         {cities.map(city => {
