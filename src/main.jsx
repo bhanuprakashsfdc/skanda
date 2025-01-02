@@ -7,7 +7,7 @@ import './index.css';
 import Layout from './layouts/Layout.jsx';
 import Home from './pages/Home.jsx';
 import AboutPageView from './pages/Aboutpage.jsx';
-import ServicesPageView from './pages/Servicespage.jsx';
+import ServicesPageView from './pages/ServicesPage.jsx';
 import ContactPageView from './pages/ContactPage.jsx';
 import WhyuspagePageView from './pages/Whyuspage.jsx';
 import PestControlService from './components/PestControlService/PestControlService.jsx'; // New Component for pest control services
