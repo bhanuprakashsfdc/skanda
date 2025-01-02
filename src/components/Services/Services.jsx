@@ -2,6 +2,19 @@ import React from 'react';
 
 // Service data array
 const services = [
+
+  {
+    icon: 'flaticon-mosquito',
+    title: 'Bed Bug Control',
+    description: 'Professional services to eliminate bed bugs and ensure a peaceful night’s sleep.',
+    link: 'bed-bug-control.html',
+  },
+  {
+    icon: 'flaticon-termite',
+    title: 'Termites Control',
+    description: 'Protect your property from termites with our comprehensive termite control services.',
+    link: 'termites-control.html',
+  },
   {
     icon: 'flaticon-cockroach',
     title: 'Cockroach Control',
@@ -13,12 +26,6 @@ const services = [
     title: 'Spiders Control',
     description: 'Safe and efficient spider control services to protect your home from unwanted arachnids.',
     link: 'spiders-control.html',
-  },
-  {
-    icon: 'flaticon-termite',
-    title: 'Termites Control',
-    description: 'Protect your property from termites with our comprehensive termite control services.',
-    link: 'termites-control.html',
   },
   {
     icon: 'flaticon-squirrel',
@@ -43,12 +50,6 @@ const services = [
     title: 'Ant Control',
     description: 'Effective solutions for controlling and eliminating ants from your home.',
     link: 'ant-control.html',
-  },
-  {
-    icon: 'flaticon-mosquito',
-    title: 'Bed Bug Control',
-    description: 'Professional services to eliminate bed bugs and ensure a peaceful night’s sleep.',
-    link: 'bed-bug-control.html',
   },
 ];
 

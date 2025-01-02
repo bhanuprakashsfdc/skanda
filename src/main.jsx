@@ -6,6 +6,7 @@ import './index.css';
 // Importing pages and components
 import Layout from './layouts/Layout.jsx';
 import Home from './pages/Home.jsx';
+import ErrorPage from './pages/Error/Error.jsx'
 import AboutPageView from './pages/Aboutpage.jsx';
 import ServicesPageView from './pages/Servicespage.jsx';
 import ContactPageView from './pages/ContactPage.jsx';
@@ -40,6 +41,7 @@ root.render(
             />
           );
         })}
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
   </Router>

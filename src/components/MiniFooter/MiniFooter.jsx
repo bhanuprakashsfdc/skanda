@@ -40,11 +40,11 @@ const MiniFooter = () => {
                 <h4 className="widget_title">Our Services</h4>
                 <div className="widget-content">
                   <ul className="list">
-                    <li><a href="#">House Sanitizing</a></li>
-                    <li><a href="#">Window Sanitizing</a></li>
-                    <li><a href="#">Domestic Sanitizing</a></li>
-                    <li><a href="#">Disinfection</a></li>
-                    <li><a href="#">Office Sanitizing</a></li>
+                    <li><a href="#">Bed Bug Control</a></li>
+                    <li><a href="#">Bee Control</a></li>
+                    <li><a href="#">Termites Control</a></li>
+                    <li><a href="#">Rodents Control</a></li>
+                    <li><a href="#">Cockroach Control</a></li>
                   </ul>
                 </div>
               </div>

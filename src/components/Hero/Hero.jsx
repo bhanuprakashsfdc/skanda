@@ -18,15 +18,17 @@ const Hero = () => {
               </div>
             </div>
             <div className="image-wrapper">
+              {/* 
               <span className="shape-two">
                 <img src="assets/images/shape/shape-2.png" alt="Pest Control Shape" />
               </span>
               <span className="shape-three">
                 <img src="assets/images/shape/shape-3.png" alt="Pest Control Shape" />
               </span>
+              */}
               <div className="image">
-                <div className="bg" style={{ backgroundImage: 'url(assets/images/resource/image-9.jpg)' }}></div>
-                <img src="assets/images/resource/image-2.png" alt="Pest Control" />
+                <div className="bg" style={{ backgroundImage: 'url(assets/images/resource/x.jpg)' }}></div>
+                <img src="assets/images/resource/1.png" alt="Pest Control" />
               </div>
               <div className="contact-number">
                 <h5>{NAME}</h5>

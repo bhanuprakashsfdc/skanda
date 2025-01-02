@@ -1,5 +1,5 @@
 import React from 'react';
-import {NAME } from '../../constants/constants';
+import {NAME, PHONE_URL, EMAIL_URL } from '../../constants/constants';
 const WhyUs = () => {
   return (
     <section className="whychoose-us-section">
@@ -41,12 +41,13 @@ const WhyUs = () => {
                 <img src="assets/images/shape/shape-3.png" alt="Pest Control Shapes" />
               </span>
               <div className="image wow fadeInDown" data-wow-duration="1500ms">
-                <img src="assets/images/resource/image-3.jpg" alt="Pest Control Technician" />
+                <img src="assets/images/resource/3.jpg" alt="Pest Control Technician" />
               </div>
               <div className="author-info" data-parallax='{"y": 40}'>
                 <div className="author">
-                  <img src="assets/images/resource/author-1.jpg" alt="{NAME} Expert" />
+                 
                 </div>
+                <h2>10+</h2>
                 <h4>Years of Experience</h4>
                 <div className="link">
                   <a href="#" className="theme-btn btn-style-one style-three">
@@ -54,13 +55,13 @@ const WhyUs = () => {
                   </a>
                 </div>
               </div>
-              <a href="tel:2107636992" className="phone wow fadeInDown" data-wow-duration="1500ms">
+              <a href={PHONE_URL} className="phone wow fadeInDown" data-wow-duration="1500ms">
                 <img src="assets/images/icons/icon-3.png" alt="Call Us" />
                 <div className="hover-image">
                   <img src="assets/images/icons/icon-3.png" alt="Call Us" />
                 </div>
               </a>
-              <a className="email wow fadeInDown" data-wow-duration="1500ms" href="mailto:info@example.com">
+              <a className="email wow fadeInDown" data-wow-duration="1500ms" href={EMAIL_URL}>
                 <img src="assets/images/icons/icon-4.png" alt="Email Us" />
                 <div className="hover-image">
                   <img src="assets/images/icons/icon-4.png" alt="Email Us" />
