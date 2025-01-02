@@ -14,7 +14,7 @@ const AboutUs = () => {
                 <img src="assets/images/shape/shape-3.png" alt="Shape" />
               </span>
               <div className="image wow fadeInDown" data-wow-duration="1500ms">
-                <img src="assets/images/resource/image-1.jpg" alt="Pest Control" />
+                <img src="assets/images/resource/1.jpg" alt="Pest Control" />
               </div>
               <div className="years-of-experience" data-parallax='{"y": 50}'>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="349px" height="359px">
@@ -45,7 +45,7 @@ const AboutUs = () => {
             <div className="content-block wow fadeInUp" data-wow-duration="1500ms">
               <div className="sec-title mb-20">
                 <div className="sub-title">About {NAME}</div>
-                <h2>World’s Best Pest Control Services Since 2008</h2>
+                <h2>Best Pest Control Services in Bengaluru</h2>
               </div>
               <div className="text">
                 {NAME} has been providing professional pest management solutions for over 20 years, ensuring homes and businesses stay pest-free. We use eco-friendly and safe methods to eliminate pests from your surroundings.

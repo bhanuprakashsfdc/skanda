@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="content">
             <div className="logo">
               <a href="index.html">
-                <img src="assets/images/logo-2.png" alt="Aditya Sri Cargo Packers and Movers" />
+                <img src="assets/images/logo.png" alt="Aditya Sri Cargo Packers and Movers" />
               </a>
             </div>
             <ul className="social-icon">

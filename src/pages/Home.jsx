@@ -8,6 +8,7 @@ import FunFacts from '../components/FunFacts/FunFacts'
 import Blogs from '../components/Blogs/Blogs'
 import Map from '../components/Map/Map'
 import ServicesAreas from '../components/ServicesAreas/ServicesAreas'
+import Gallery from '../components/Gallery/Gallery'
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Home = () => {
       <WhyUs />
       <Testimonials />
       <FunFacts />
+      <Gallery />
       <ServicesAreas />
       <Blogs />
       <Map />

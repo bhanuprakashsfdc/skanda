@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Testimonials = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Check the screen width and set the state for desktop view
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024); // Adjust this breakpoint as per your requirement
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const testimonials = [
     {
       name: 'Arun Kumar',
@@ -46,21 +66,19 @@ const Testimonials = () => {
           <div className="sub-title">Customer Testimonials</div>
           <h2>What Our Customers Say</h2>
         </div>
-        <div className="testimonials-container flex">
+        {/* Conditionally apply flex class based on desktop screen */}
+        <div className={`testimonials-container ${isDesktop ? 'flex' : ''}`}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-item service-block-one ">
-              <div className="col-lg-12 col-md-12">
-                <div className="inner-box">
-                  <h4 className="text">{testimonial.name}</h4>
-                  <span>{testimonial.location}</span>
-                  <div className="testimonial-rating">
+            <div key={index} className="testimonial-item service-block-one">
+              <div className="inner-box">
+                <h4>{testimonial.name}</h4>
+                <span>{testimonial.location}</span>
+                <div className="testimonial-rating">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <span key={i} className="fa fa-star"></span>
                   ))}
-                  <div className="testimonial-text">{testimonial.testimonial}</div>
                 </div>
-              </div>
-              
+                <div className="testimonial-text">{testimonial.testimonial}</div>
               </div>
             </div>
           ))}

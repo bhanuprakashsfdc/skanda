@@ -5,6 +5,8 @@ import Footer from '../components/Footer/Footer';
 import MiniHeader from '../components/MiniHeader/MiniHeader';
 import MiniFooter from '../components/MiniFooter/MiniFooter';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
+import { WHATSAPP } from '../constants/constants';
+import CallAndWhatsApp from '../components/CallAndWhatsApp/CallAndWhatsApp';
 
 const Layout = () => {
   return (
@@ -15,8 +17,10 @@ const Layout = () => {
         <Outlet />
       </main>
       <MiniFooter />
+      <CallAndWhatsApp />
       <Footer /> 
       <ScrollToTop />
+      
     </div>
   )
 }
